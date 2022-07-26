@@ -53,3 +53,8 @@ export class AppComponent {
 
 
 }
+
+// let type = this.sourceList[i].type.toLowerCase();
+// if (type.(searchTerm).includes) {}
+// if (name.indexOf(searchTerm) >= 0) original code
+// (name.includes(searchTerm)) doesnt work
