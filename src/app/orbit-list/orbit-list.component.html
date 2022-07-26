@@ -6,12 +6,12 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row" *ngFor="let satellite of satellites">{{satellite.name}}
-        <td class="warning">{{satellite.type}}</td> 
-        <!-- highlight satellite type class="warning" do iput this in the satellite.type td tag? -->
-        <td>{{satellie.operational}}</td> 
+    <tr class="data-row" *ngFor="let satellite of satellites">
+        <td>{{satellite.name}}</td>
+        <td [class.warning]="satellite.isSpaceDebris()">{{satellite.type}}</td> 
+        <!-- highlight satellite type class="warning" do i put this in the satellite.type td tag? -->
+        <td>{{satellite.operational}}</td> 
         <td>{{satellite.orbitType}}</td>
-        <td></td>
         <td>{{satellite.launchDate}}</td>
     </tr>
 </table>
