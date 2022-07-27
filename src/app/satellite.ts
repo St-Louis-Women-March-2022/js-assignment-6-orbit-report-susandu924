@@ -15,7 +15,13 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
+		if (this.type === "Space Debris")
 		return true;
+		else 
+		return false;
+		// if satellite.type === isSpaceDebris (if the satellite has space debris in the type column)
+		// add warning class to the table cell
+		// else return false; else?
    }
 
 }

@@ -4,7 +4,7 @@
 }
 
 .warning {
-	background-color: #da8a8a;
+	background-color: red;
 }
 
 table {
@@ -25,4 +25,8 @@ th, td {
 	text-align: left;
 	margin: 5px 10px;
 	padding: 6px;
+}
+
+tr:nth-child(odd) {
+	background: rgb(223, 76, 243)
 }

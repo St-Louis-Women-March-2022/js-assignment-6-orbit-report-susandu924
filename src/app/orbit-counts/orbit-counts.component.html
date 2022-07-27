@@ -1,6 +1,12 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div>Total: <span class="counts-total" >{{satellites.length}}</span></div>
 </div>
 
 <!-- TODO 4: add logic to count number of satellites displayed -->
+<!-- count the number of satellites in the table countByType function will do this. it returns count-->
+<!-- *ngFor="let satellite of satellites" -->
+<!-- *ngIf = "satellites.length !==0" -->
+<!-- can i do [countsTotal.class] = "countByType()" does not work, made blank page-->
+<!-- *ngFor="let satellite of satellites" -->
+<!-- [class.warning]="satellite.isSpaceDebris()">{{satellite.type}} -->
